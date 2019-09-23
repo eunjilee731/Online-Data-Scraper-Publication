@@ -1,0 +1,14 @@
+{
+    "name": "",
+    "version": "0.0.1",
+    "homepage": "https://github.com/eunjilee731/Online-Data-Scraper-Publication",
+    "description": "",
+    "author": "Eunji",
+    "main": "app.js",
+    "dependencies": {
+        "nodemon": "latest",
+        "express": "latest",
+        "request": "latest",
+        "cheerio": "latest"
+    }
+}
