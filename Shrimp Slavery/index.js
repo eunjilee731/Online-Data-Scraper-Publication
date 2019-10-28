@@ -12,11 +12,11 @@ function showContent(id) {
 
     //console.log( $("#content-" + id).offset().top )
 	// show the one with  content-[id]
-	$("#content-" + id).show();
+	$("#body-" + id).show();
 
     /* BVB fixed this scroll */
 	$([document.documentElement, document.body]).animate({
-        scrollTop: $("#content-" + id).offset().top-100},
+        scrollTop: $("#body-" + id).offset().top-100},
 			 'slow');
 
 
@@ -120,7 +120,7 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.parentElement.nextElementSibling;
+    var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {

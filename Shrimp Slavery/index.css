@@ -28,6 +28,7 @@ body,html {
 }
 
 .navigation {
+  font-family: "Genath-Bold";
   position: fixed;
   padding-left: 4%;
   width: 100%;
@@ -113,7 +114,7 @@ body,html {
   /* display: inline-block; */
   width: 29vw;
   margin-top: -350px;
-  margin-left: 200px;
+  margin-left: 1050px;
     /* BVB moved z-index to 40 so navigation z-index is on top */
   z-index: 10;
   /* vertical-align: top; */
@@ -122,7 +123,7 @@ body,html {
 }
 
 
-.content {
+.body {
   /* margin-top: 0px; */
     z-index: 0;
   /* display: block; */
@@ -130,7 +131,7 @@ body,html {
 }
 
 
-.collapsible {
+.collapsible{
   background: transparent;
   cursor: pointer;
   border: none;
@@ -138,14 +139,25 @@ body,html {
   outline: none;
   width: 830px;
   display: block;
+  margin-left: 450px;
   /* line-height: 70pt; */
   float: center;
   /* font-family: "VTF"; */
-  margin-left: 150px;
-  margin-bottom: 20pt;
+  margin-bottom: 0pt;
   line-height: 44pt;
   font-size: 20pt;
   font-family: "Fortescue Pro";
+}
+
+.collapsible:hover {
+  color: #2d24e7;
+}
+
+.numbers{
+  /* margin-left: 10px; */
+  /* margin-bottom: 20pt; */
+  font-size: 30pt;
+  /* transform: rotate(90deg); */
 }
 
 .article {
@@ -163,7 +175,7 @@ body,html {
   /* line-height: 70pt; */
   float: center;
   /* font-family: "VTF"; */
-  margin-left: 150px;
+
   margin-bottom: 20pt;
   line-height: 44pt;
   z-index: 30;
@@ -185,15 +197,18 @@ body,html {
 }
 
 .photo {
-  display: inline-block;
+  display: block;
   /* margin-left: 300px; */
   z-index: 0;
+
 }
 
 .photo img{
   position: absolute;
   /* display: block; */
-  margin-left: 780px;
+  margin-left: 100px;
+  /* margin-top: -20px; */
   z-index: -3;
   width: 600px;
+
 }
